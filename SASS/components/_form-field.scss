@@ -1,0 +1,86 @@
+.form-field {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  /* outline: 1px solid blue; */
+  width: 448px;
+  height: 501px;
+
+  &__title {
+    text-align: center;
+    font-weight: $font-weight-accent;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $black-brown-color;
+  }
+}
+
+.box-input {
+  /* outline: 1px solid tomato; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+
+  &__label {
+    margin-bottom: 4px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+}
+
+.input-wrap {
+  position: relative;
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color $time $timing-function;
+    padding-left: 42px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $black-brown-color;
+    margin-left: 12px;
+    display: block;
+    transition: fill $time $timing-function;
+  }
+
+  &__input:focus + &__icon {
+    fill: $accent-color;
+  }
+}
+
+.input-wrap__input:focus,
+.box-input__textarea:focus {
+  outline: none;
+  border-color: $accent-color;
+}
+
+.box-input__textarea {
+  height: 120px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding-left: 16px;
+  padding-top: 12px;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    position: absolute;
+  }
+}
