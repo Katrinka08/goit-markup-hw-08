@@ -9,93 +9,118 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
+    <link
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       rel="stylesheet"
-    /> -->
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+
     <!--Шапка сайта-->
-    <header class="header">
-      <div class="container header-nav">
-        <nav class="nav">
+
+    <header class="page-header">
+      <div class="main-nav">
+        <nav class="site-nav">
           <a href="./index.html" class="logo">
-            <span class="logo--accent">Web</span>Studio</a
+            <span class="logo--black">Web</span>Studio</a
           >
-          <ul class="nav-links list">
-            <li class="nav-links__item">
-              <a href="./index.html" class="nav-links__link">Студія</a>
+          <ul class="menu list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Студія</a>
             </li>
-            <li class="nav-links__item">
+            <li class="menu__item">
               <a
                 href="./portfolio.html"
-                class="nav-links__link nav-links__link--current"
+                class="menu__link menu__link--current"
                 >Портфоліо</a
               >
             </li>
-            <li class="nav-links__item">
-              <a href="#Контакти" class="nav-links__link">Контакти</a>
+            <li class="menu__item">
+              <a href="#Контакти" class="menu__link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="contact list">
-          <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="contact__link">
-              <svg class="contact__icon" width="16" height="12">
+        <ul class="contact-nav list">
+          <li class="contact-nav__item">
+            <a href="mailto:info@devstudio.com" class="contact-nav__link">
+              <svg class="contact-nav__icon" width="16" height="12">
                 <use href="./img/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact__item">
-            <a href="tel:+380961111111" class="contact__link">
-              <svg class="contact__icon" width="10" height="16">
+          <li class="contact-nav__item">
+            <a href="tel:+380961111111" class="contact-nav__link">
+              <svg class="contact-nav__icon" width="10" height="16">
                 <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button
+        type="button"
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu-toggle__icon">
+          <use class="menu-toggle__menu" href="./img/icons.svg#mob-menu"></use>
+        </svg>
+      </button>
       </div>
     </header>
+
     <!--Главное-->
+
     <main>
-      <section class="section portfolio">
-        <div class="container">
-          <h1 class="section__title section__title--hidden">Посилання</h1>
-          <div class="portfolio-button">
+      <section class="page-section">
+        <div class="portfolio">
+          <h1 class="portfolio__title portfolio__title--hidden">Посилання</h1>
+          <div class="filters">
             <button
               type="button"
-              class="portfolio-button__button portfolio-button__button--active"
+              class="filters__filter filters__filter--active"
             >
               Усі
             </button>
-            <button type="button" class="portfolio-button__button">
+            <button type="button" class="filters__filter">
               Веб-сайти
             </button>
-            <button type="button" class="portfolio-button__button">
+            <button type="button" class="filters__filter">
               Додатки
             </button>
-            <button type="button" class="portfolio-button__button">
+            <button type="button" class="filters__filter">
               Дизайн
             </button>
-            <button type="button" class="portfolio-button__button">
+            <button type="button" class="filters__filter">
               Маркетинг
             </button>
           </div>
-          <ul class="poster list">
-            <li class="poster__item">
-              <a href="" class="poster__link">
-                <div class="poster-thumb">
+
+<!-- ГалереЯ -->
+
+          <ul class="gallery list">
+            <li class="gallery__item">
+              <a href="" class="gallery-card">
+                <div class="gallery-card__thumb">
                   <img
-                    class="poster-thumb__image"
-                    src="img/img(8).jpg"
-                    alt="технокряк"
-                    width="370"
+                    srcset="
+                      ./img/gallery-1photo-tablet-354w.webp 354w,
+                      ./img/gallery-1photo-desktop-370w.webp 370w,
+                      ./img/gallery-1photo-mobile-450w.webp 450w,
+                      ./img/gallery-1photo-tablet-708w.webp 708w,
+                      ./img/gallery-1photo-desktop-740w.webp 740w,
+                      ./img/gallery-1photo-mobile-900w.webp 900w,
+                      ./img/gallery-1photo-desktop-1110w.webp 1110w
+                    "
+                    src="img/gallery-1photo-tablet-354w.webp"
+                    alt="Фото роботи над сайтом"
+                    sizes="(min-width: 960px) 370px, (min-width: 768px) 354px, 450px"
+                    class="gallery-card__img"
                   />
-                  <div class="poster-overlay">
-                    <p class="poster-overlay__text">
+                    <p class="gallery-card__overlay">
                       Ресурс пропонує комплексні <br />
                       пропозиції з різним рівнем <br />
                       функціоналу та сервісів. Все це <br />
@@ -104,22 +129,17 @@
                       чи приватну особу.
                     </p>
                   </div>
-                </div>
-                <div class="poster-border">
-                  <h2 class="poster-border__title">Техноряк</h2>
-                  <p class="poster-border__text">Веб-сайт</p>
+                <div class="gallery-card__content">
+                  <h2 class="gallery-card__subtitle">Техноряк</h2>
+                  <p class="gallery-card__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="poster__item">
-              <a href="" class="poster__link">
-                <div class="poster-thumb">
-                  <img
-                    class="poster-thumb__image"
-                    src="img/img(9).jpg"
-                    alt="нью орлеан"
-                    width="370"
-                  />
+
+            <li class="gallery__item">
+              <a href="" class="gallery-card">
+                <div class="gallery-card__thumb">
+                  
                   <div class="poster-overlay">
                     <p class="poster-overlay__text">
                       Ресурс пропонує комплексні <br />
