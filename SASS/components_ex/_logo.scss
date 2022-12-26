@@ -1,6 +1,11 @@
+
+.site-nav .logo {
+  padding: 16px 0;
+}
+
 .logo {
   color: $black-color;
-
+  display: block;
   font-family: $font-family-accent;
   font-weight: $font-weight-accent;
   font-size: 24px;
