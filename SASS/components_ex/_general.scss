@@ -23,15 +23,10 @@ body {
 .main-nav {
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid tomato ;
+  outline: 1px solid tomato;
 }
 
 
-@media screen and (min-width: 480px) {
-  .main-nav {
-    width: 480px;
-  }
-}
 
 
 
