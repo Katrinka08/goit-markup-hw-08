@@ -1,6 +1,5 @@
 
   .page-header {
-    position: relative;
     letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.14;
@@ -8,17 +7,25 @@
     border-bottom: 1px solid $smoky-white-color;
   }
 
+  @media screen and (min-width: 480px) {
+    .main-nav {
+      width: 480px;
+    }
+  }
+
   .main-nav {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .menu, .contact-nav {
-    display: none;
+  @media screen and (max-width: 767px) {
+    .menu, .contact-nav {
+      display: none;
+    }
   }
-
+  
   .menu-toggle {
     position: absolute;
     min-height: 40px;
@@ -33,19 +40,20 @@
     border: none;
     border-radius: 50%;
     outline: none;
-  }
 
-  .menu-toggle__icon {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    fill: $black-color;
-    transition: fill $time $timing-function;
-    &:hover,
-    &:focus {
-      fill: $accent-color;
+    &__icon {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      transition: fill $time $timing-function;
+    }
+
+    &:hover &__icon {
+      fill: $accent-color
     }
   }
+
+  
 
   
    

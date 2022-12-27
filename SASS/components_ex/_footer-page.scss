@@ -1,130 +1,130 @@
-.footer {
-  background-color: $granite-color;
+// .footer {
+//   background-color: $granite-color;
 
-  line-height: 1.71;
+//   line-height: 1.71;
 
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
 
-.address {
-  &__item:not(:nth-last-child(1)) {
-    margin-bottom: 9px;
-  }
+// .address {
+//   &__item:not(:nth-last-child(1)) {
+//     margin-bottom: 9px;
+//   }
 
-  &__map {
-    color: $white-color;
-    font-style: normal;
-  }
+//   &__map {
+//     color: $white-color;
+//     font-style: normal;
+//   }
 
-  &__contact {
-    color: rgba(100%, 100%, 100%, 60%);
-    font-style: normal;
-  }
-}
+//   &__contact {
+//     color: rgba(100%, 100%, 100%, 60%);
+//     font-style: normal;
+//   }
+// }
 
-.footer-second {
-  margin-left: 70px;
+// .footer-second {
+//   margin-left: 70px;
 
-  &__title {
-    margin-bottom: 20px;
-    color: $white-color;
-    font-weight: $font-weight-accent;
-    line-height: 1.1;
-    text-transform: uppercase;
-  }
-}
+//   &__title {
+//     margin-bottom: 20px;
+//     color: $white-color;
+//     font-weight: $font-weight-accent;
+//     line-height: 1.1;
+//     text-transform: uppercase;
+//   }
+// }
 
-.footer-soccite {
-  display: flex;
+// .footer-soccite {
+//   display: flex;
 
-  &__item {
-    width: 44px;
-    height: 44px;
+//   &__item {
+//     width: 44px;
+//     height: 44px;
 
-    & + & {
-      margin-left: 10px;
-    }
-  }
+//     & + & {
+//       margin-left: 10px;
+//     }
+//   }
 
-  &__link {
-    width: 100%;
-    height: 100%;
+//   &__link {
+//     width: 100%;
+//     height: 100%;
 
-    border-radius: 50%;
+//     border-radius: 50%;
 
-    display: flex;
+//     display: flex;
 
-    align-items: center;
-    justify-content: center;
+//     align-items: center;
+//     justify-content: center;
 
-    background-color: rgba(255, 255, 255, 0.1);
+//     background-color: rgba(255, 255, 255, 0.1);
 
-    transition: background-color $time $timing-function;
+//     transition: background-color $time $timing-function;
 
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-    }
-  }
+//     &:hover,
+//     &:focus {
+//       background-color: $accent-color;
+//     }
+//   }
 
-  &__icon {
-    fill: $white-color;
-  }
-}
+//   &__icon {
+//     fill: $white-color;
+//   }
+// }
 
-.footer-third {
-  margin-left: auto;
+// .footer-third {
+//   margin-left: auto;
 
-  &__text {
-    font-weight: $font-weight-accent;
-    line-height: 1.14;
-    text-transform: uppercase;
+//   &__text {
+//     font-weight: $font-weight-accent;
+//     line-height: 1.14;
+//     text-transform: uppercase;
 
-    color: $white-color;
+//     color: $white-color;
 
-    margin-bottom: 20px;
-  }
-}
+//     margin-bottom: 20px;
+//   }
+// }
 
-.footer-field {
-  display: flex;
+// .footer-field {
+//   display: flex;
 
-  &__input {
-    width: 358px;
-    height: 50px;
+//   &__input {
+//     width: 358px;
+//     height: 50px;
 
-    background: $granite-color;
+//     background: $granite-color;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: $white-color;
-    padding-left: 15px;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     color: $white-color;
+//     padding-left: 15px;
 
-    &::placeholder {
-      font-size: 16px;
-      line-height: 1.25;
-      color: rgba(255, 255, 255, 0.6);
+//     &::placeholder {
+//       font-size: 16px;
+//       line-height: 1.25;
+//       color: rgba(255, 255, 255, 0.6);
 
-      padding-left: 16px;
-    }
-  }
-  &__button {
-    @extend %button;
-    width: 200px;
-    height: 50px;
-    margin-left: 12px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    display: flex;
+//       padding-left: 16px;
+//     }
+//   }
+//   &__button {
+//     @extend %button;
+//     width: 200px;
+//     height: 50px;
+//     margin-left: 12px;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     display: flex;
    
-    &:hover,
-    &:focus {
-      background-color: $twitter-color;
-    }
-  }
+//     &:hover,
+//     &:focus {
+//       background-color: $twitter-color;
+//     }
+//   }
 
-  &__icon {
-    margin-left: 10px;
-  }
-}
+//   &__icon {
+//     margin-left: 10px;
+//   }
+// }

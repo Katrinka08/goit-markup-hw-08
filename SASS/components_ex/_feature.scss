@@ -1,27 +1,27 @@
-.feature {
-  line-height: 1.71;
-  display: flex;
+// .feature {
+//   line-height: 1.71;
+//   display: flex;
 
-  &__title {
-    color: $black-brown-color;
-    margin-bottom: 10px;
-    font-weight: $font-weight-accent;
-    font-size: 14px;
-    line-height: 1.14;
-  }
+//   &__title {
+//     color: $black-brown-color;
+//     margin-bottom: 10px;
+//     font-weight: $font-weight-accent;
+//     font-size: 14px;
+//     line-height: 1.14;
+//   }
 
-  &__block {
-    width: 270px;
-    height: 120px;
-    background-color: $periwinkle-color;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+//   &__block {
+//     width: 270px;
+//     height: 120px;
+//     background-color: $periwinkle-color;
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
 
-  &__item + &__item {
-    margin-left: 30px;
-  }
-}
+//   &__item + &__item {
+//     margin-left: 30px;
+//   }
+// }
